@@ -1,0 +1,20 @@
+{
+    "name": "veeroute/php_sdk",
+    "description": "description_text",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gena Koveshnikov",
+            "email": "gk@veeroute.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "4.5.*"
+    },
+    "autoload": {
+        "classmap": [
+            "external_lib"
+        ]
+    }
+}
