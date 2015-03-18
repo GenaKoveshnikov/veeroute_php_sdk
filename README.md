@@ -13,13 +13,14 @@
     * удаление
 
 ## Настройки
-
+* в файле `veeroute_base.php` необходимо указать url (`$URL`), на который будете делать запрос:
+   * для тестового аккаунта - `trial.veeroute.com`.
+   * для рабочего аккаунта - `prof.veeroute.com`
 
 
 ## Примеры
 ### Пример добавления заказов
 ```
-  
   require_once(__DIR__.'/../veeroute.php');
   
   class exampleClass {
@@ -84,5 +85,4 @@
   
   $ex = new exampleClass();
   $ex->testSave();
-    
 ```
