@@ -35,7 +35,9 @@ class request {
     }
 
     private static function toArray($data) {
-
+        /**
+         * TODO: сделать проверку на валидность xml файла.
+         */
         $xml = simplexml_load_string($data, null, LIBXML_NOCDATA);
         $json = json_encode($xml);
         $array = json_decode($json,TRUE);

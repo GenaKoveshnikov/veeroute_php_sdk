@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: panda-dev
- * Date: 17.03.15
- * Time: 18:14
- */
+
 namespace veeroute_lib;
 
 require_once(__DIR__.'/veeroute_base.php');

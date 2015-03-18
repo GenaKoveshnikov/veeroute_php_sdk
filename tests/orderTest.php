@@ -89,7 +89,7 @@ class orderTest extends PHPUnit_Framework_TestCase {
     public function testSave() {
 
 
-        $vr = new \veeroute_lib\veeroute($this->login, $this->password, $this->portal, $this->mode);
+        $vr = new \veeroute_lib\veeroute($this->login, $this->password, $this->portal);
         $resp = $vr->setOrders($this->data);
 
         $data = $resp['orders']['order'];
