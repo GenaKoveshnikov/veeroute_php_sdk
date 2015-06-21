@@ -96,7 +96,7 @@ abstract class veerouteBase {
 
     public static function errorSingle($data) {
 
-        if(isset($data['error']) && !is_array($data['error'])) {
+        if(isset($data['error']) && is_array($data['error'])) {
             throw new \Exception('error in class: '.__CLASS__.'; error code: '.$data['error']['errorCode']. ', message: '.$data['error']['errorMessage']);
         }
 
